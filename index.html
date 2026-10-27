@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog di Andrea</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Striscia arancione in alto -->
+  <div class="barra-arancio">
+    <div class="interno">Blog personale su 3D, game, fumetti e film</div>
+  </div>
+
+  <!-- Header nero con logo e menu -->
+  <header class="header">
+    <div class="interno">
+      <a class="logo" href="index.html"><span class="logo-icona"></span>BLOG DI ANDREA</a>
+      <nav class="menu">
+        <a href="index.html" class="attivo">Home</a>
+        <a href="tag.html">Tag</a>
+        <a href="https://www.artstation.com/fiascio" target="_blank" rel="noopener">Portfolio</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="pagina">
+    <div class="contenitore">
+
+      <!-- COLONNA CENTRALE -->
+      <main class="colonna-centrale">
+
+        <section class="box intro">
+          <a class="bottone-blu" href="#articoli">Leggi ora</a>
+          <p>Benvenuto! Qui scrivo di tutto quello che mi appassiona: modellazione 3D, videogiochi, DC, fumetti e film.</p>
+        </section>
+
+        <section id="articoli">
+          <div id="hero" class="hero">
+            <div id="hero-palco" class="hero-palco"></div>
+            <div id="hero-miniature" class="hero-miniature"></div>
+          </div>
+
+          <div class="schede"><span class="scheda attiva">Nuovi articoli</span></div>
+          <div id="lista" class="box lista"></div>
+        </section>
+
+      </main>
+
+      <!-- COLONNA DESTRA -->
+      <aside class="colonna-destra">
+
+        <section class="box-laterale">
+          <form class="ricerca" action="tag.html" method="get">
+            <input type="text" name="q" placeholder="Cerca negli articoli" aria-label="Cerca negli articoli">
+            <button type="submit" class="bottone-blu piccolo">Cerca</button>
+          </form>
+        </section>
+
+        <section class="box-laterale">
+          <h2 class="box-titolo">Cerca per tag</h2>
+          <div class="box-corpo">
+            <form class="ricerca" action="tag.html" method="get">
+              <input type="text" id="cerca-tag" name="tag" placeholder="Scrivi un tag (es. 3d)" aria-label="Cerca un tag" autocomplete="off">
+              <button type="submit" class="bottone-blu piccolo">Vai</button>
+            </form>
+            <div id="tag-lista" class="chips"></div>
+          </div>
+        </section>
+
+        <!-- Riquadri vuoti da riempire in futuro -->
+        <section class="box-laterale">
+          <h2 class="box-titolo">In evidenza</h2>
+          <div class="box-corpo vuoto"></div>
+        </section>
+
+        <section class="box-laterale">
+          <h2 class="box-titolo">Ultime novità</h2>
+          <div class="box-corpo vuoto"></div>
+        </section>
+
+        <section class="box-laterale">
+          <h2 class="box-titolo">Archivio</h2>
+          <div class="box-corpo vuoto"></div>
+        </section>
+
+        <section class="box-laterale">
+          <h2 class="box-titolo">Link utili</h2>
+          <div class="box-corpo vuoto"></div>
+        </section>
+
+      </aside>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="interno">&copy; 2026 Blog di Andrea. Tutti i marchi sono di proprietà dei rispettivi titolari.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
